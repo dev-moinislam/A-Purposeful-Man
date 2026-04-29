@@ -807,7 +807,7 @@ header.scrolled {
     
     .footer-container { flex-direction: column; gap: 2rem; text-align: center; }
     
-    .menu-toggle { display: block; cursor: pointer; font-size: 1.5rem; color: var(--gold-accent); }
+    .menu-toggle { display: block; cursor: pointer; font-size: 1.5rem; color: var(--gold-accent); margin-left: auto; }
     .nav-links { 
         display: none; 
         flex-direction: column; 
