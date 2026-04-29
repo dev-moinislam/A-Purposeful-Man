@@ -134,6 +134,28 @@ document.addEventListener('DOMContentLoaded', () => {
         const particles = new THREE.Points(geometry, material);
         scene.add(particles);
 
+        // 3D Wireframe Globe (Brand Theme)
+        const globeGeometry = new THREE.SphereGeometry(45, 32, 32);
+        const globeMaterial = new THREE.MeshBasicMaterial({
+            color: 0xc5a880, // Gold accent
+            wireframe: true,
+            transparent: true,
+            opacity: 0.12
+        });
+        const globe = new THREE.Mesh(globeGeometry, globeMaterial);
+        globe.position.set(0, -20, -180); // Start far back
+        scene.add(globe);
+
+        // Inner core to block particles behind it, giving solid feel
+        const coreGeometry = new THREE.SphereGeometry(44, 32, 32);
+        const coreMaterial = new THREE.MeshBasicMaterial({
+            color: 0x050505,
+            transparent: true,
+            opacity: 0.9
+        });
+        const globeCore = new THREE.Mesh(coreGeometry, coreMaterial);
+        globe.add(globeCore);
+
         // Lightning effect setup
         const lightningFlash = new THREE.PointLight(0xc5a880, 0, 500, 1.7);
         lightningFlash.position.set(0, 100, -50);
@@ -203,8 +225,15 @@ document.addEventListener('DOMContentLoaded', () => {
             particles.rotation.y = elapsedTime * 0.03 + scrollY * 0.0005;
             particles.rotation.x = elapsedTime * 0.01 + scrollY * 0.0002;
 
+            // Rotate Globe
+            globe.rotation.y = elapsedTime * 0.05 + scrollY * 0.001;
+            globe.rotation.x = elapsedTime * 0.02;
+
             // Camera movement based on scroll (moves through the field)
             camera.position.y = -scrollY * 0.015;
+            
+            // Zoom into the Globe as user scrolls (entering the inner world)
+            globe.position.z = -180 + (scrollY * 0.08);
             
             // Subtle camera movement from mouse
             camera.position.x += (targetX * 10 - camera.position.x) * 0.05;

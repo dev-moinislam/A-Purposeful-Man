@@ -800,6 +800,7 @@ header.scrolled {
 @media (max-width: 768px) {
     .hero-title { font-size: 3rem; }
     .hero-cta { flex-direction: column; }
+    .image-wrapper img { min-width: 0; width: 100%; max-width: 100%; }
     
     .video-grid { grid-template-columns: 1fr; }
     
