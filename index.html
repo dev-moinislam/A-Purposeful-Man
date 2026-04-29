@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albertino Lima | A Purposeful Man</title>
+    <meta name="description" content="Documenting the journey of becoming a disciplined man. Join the discipline system.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- 3D WebGL Background -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Header / Nav -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">A Purposeful Man</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#blueprint">Blueprint</a></li>
+                    <li><a href="#support" class="btn-nav">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="hero section-padding">
+        <div class="container hero-container">
+            <div class="hero-content fade-in-up">
+                <h1 class="hero-title">Nobody is coming<br>to <span class="gold-text">save you.</span></h1>
+                <p class="hero-subtitle">Documenting the journey of becoming a disciplined man.</p>
+                <div class="hero-cta">
+                    <a href="https://www.youtube.com/@APurposefulMan" target="_blank" class="btn btn-outline"><i class="fa-brands fa-youtube"></i> Watch the Journey</a>
+                    <a href="#support" class="btn btn-primary">Support The Mission <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-up delay-1">
+                <div class="image-wrapper">
+                    <div class="glow-effect"></div>
+                    <img src="images/hero.jpg" alt="Albertino Lima - A Purposeful Man">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Trust / Identity Section -->
+    <section id="identity" class="identity section-padding">
+        <div class="container">
+            <div class="identity-content fade-in-up">
+                <h2>I'm Albertino Lima. Not perfect. Not special. <span class="gold-text">Just disciplined.</span></h2>
+                <div class="value-bullets">
+                    <div class="bullet">
+                        <i class="fa-solid fa-xmark"></i>
+                        <p>No fake success</p>
+                    </div>
+                    <div class="bullet">
+                        <i class="fa-solid fa-xmark"></i>
+                        <p>No shortcuts</p>
+                    </div>
+                    <div class="bullet">
+                        <i class="fa-solid fa-xmark"></i>
+                        <p>No waiting</p>
+                    </div>
+                    <div class="bullet highlight">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Only truth and action</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2.5 The Blueprint Section -->
+    <section id="blueprint" class="blueprint section-padding">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>The Blueprint</h2>
+                <p>The rules of a purposeful man</p>
+            </div>
+            <div class="blueprint-grid">
+                <div class="blueprint-card fade-in-up delay-1" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                    <div class="card-number">01</div>
+                    <h3>Wake Up Before The Enemy</h3>
+                    <p>4:00 AM isn't just a time. It's a statement. While the world sleeps, you build. This quiet time is where discipline is forged.</p>
+                </div>
+                <div class="blueprint-card fade-in-up delay-2" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                    <div class="card-number">02</div>
+                    <h3>Forgo Cheap Dopamine</h3>
+                    <p>Scroll less, build more. Lust and endless scrolling are destroying your potential. Cut the cord and channel that energy.</p>
+                </div>
+                <div class="blueprint-card fade-in-up delay-3" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                    <div class="card-number">03</div>
+                    <h3>Physical Iron</h3>
+                    <p>Your body is the only vehicle you have in this life. Lifting weights builds mental resilience and creates an unbreakable frame.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Video Showcase Section -->
+    <section id="videos" class="videos section-padding dark-bg">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>The Journey</h2>
+                <p>Latest from the channel</p>
+            </div>
+            <div class="video-grid">
+                <a href="#" class="video-card fade-in-up delay-1">
+                    <div class="thumbnail">
+                        <img src="images/thumb1.png" alt="Video Thumbnail">
+                        <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <h3 class="video-title">I Watched My Mother Die — This Changed Everything</h3>
+                </a>
+                <a href="#" class="video-card fade-in-up delay-2">
+                    <div class="thumbnail">
+                        <img src="images/thumb2.png" alt="Video Thumbnail">
+                        <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <h3 class="video-title">Fear vs Faith (This Will Change How You Think)</h3>
+                </a>
+                <a href="#" class="video-card fade-in-up delay-3">
+                    <div class="thumbnail">
+                        <img src="images/thumb3.png" alt="Video Thumbnail">
+                        <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <h3 class="video-title">God Gave You Potential — Why Are You Wasting It?</h3>
+                </a>
+                <a href="#" class="video-card fade-in-up delay-1">
+                    <div class="thumbnail">
+                        <img src="images/thumb4.png" alt="Video Thumbnail">
+                        <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <h3 class="video-title">I Almost Folded Today… This Saved Me</h3>
+                </a>
+                <a href="#" class="video-card fade-in-up delay-2">
+                    <div class="thumbnail">
+                        <img src="images/thumb5.png" alt="Video Thumbnail">
+                        <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <h3 class="video-title">Lust Is Destroying You (Quit This Now)</h3>
+                </a>
+                <a href="#" class="video-card fade-in-up delay-3">
+                    <div class="thumbnail">
+                        <img src="images/thumb6.png" alt="Video Thumbnail">
+                        <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <h3 class="video-title">You’re Not Lazy. You’re Scared.</h3>
+                </a>
+            </div>
+            <div class="center-cta fade-in-up">
+                <a href="https://www.youtube.com/@APurposefulMan" target="_blank" class="btn btn-outline"><i class="fa-brands fa-youtube"></i> Subscribe and follow the journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Transformation Section (Emotional Hook) -->
+    <section id="transformation" class="transformation">
+        <div class="split-container">
+            <div class="split-left fade-in-left">
+                <div class="split-content">
+                    <h3>If you stay where you are...</h3>
+                    <ul class="bad-list">
+                        <li>Feeling stuck in a loop</li>
+                        <li>Constantly starting over</li>
+                        <li>Lacking true discipline</li>
+                        <li>Watching others win</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="split-right fade-in-right">
+                <div class="split-content">
+                    <h3>If you take control...</h3>
+                    <ul class="good-list">
+                        <li>Unbreakable daily habits</li>
+                        <li>Quiet, steady confidence</li>
+                        <li>Earning your own respect</li>
+                        <li>Building the life you want</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Support / Contact -->
+    <section id="support" class="email-capture section-padding">
+        <div class="container email-container fade-in-up">
+            <div class="email-content">
+                <h2>Support The Mission.</h2>
+                <p>If this journey has inspired you, support the channel or reach out directly.</p>
+                <form class="email-form" id="donationForm" action="mailto:apurposefulman26@gmail.com" method="POST" enctype="text/plain">
+                    <input type="text" name="Message" placeholder="Send a message or pledge support..." required>
+                    <button type="submit" class="btn btn-primary">Connect & Support</button>
+                </form>
+                <p class="urgency-text"><i class="fa-solid fa-shield-halved"></i> Direct email to Albertino Lima.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Social Proof / Growth -->
+    <section id="stats" class="stats section-padding dark-bg">
+        <div class="container stats-container">
+            <div class="stat-item fade-in-up">
+                <h3 class="counter" data-target="157">0</h3>
+                <p>YouTube Subscribers</p>
+            </div>
+            <div class="stat-item fade-in-up delay-1">
+                <h3 class="counter" data-target="47688">0</h3>
+                <p>Total Views</p>
+            </div>
+            <div class="stat-item fade-in-up delay-2">
+                <h3 class="counter" data-target="92">0</h3>
+                <p>Videos Published</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Final CTA -->
+    <section class="final-cta section-padding">
+        <div class="container text-center fade-in-up">
+            <h2 class="massive-text">You either stay the same...<br><span class="gold-text">or you change.</span></h2>
+            <a href="#support" class="btn btn-primary btn-large">Start Now</a>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>A Purposeful Man</h3>
+                <p>Albertino Lima</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.youtube.com/@APurposefulMan" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/apurposefulman?igsh=MTJuN3BoZmZsYXFjaw==&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@apurposefulman?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://x.com/apurpusefulman?s=21" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="mailto:apurposefulman26@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 A Purposeful Man. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Vanilla Tilt for Interactive Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <!-- Three.js for 3D Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
