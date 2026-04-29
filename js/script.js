@@ -422,8 +422,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Trigger on user click
     document.addEventListener('click', (e) => {
-        triggerFlashOverlay();
-        createLightningCrack(e.clientX, e.clientY, true);
+        // Only trigger lightning if they didn't click inside the modal (to avoid annoying flashes while watching)
+        if (!e.target.closest('.video-modal')) {
+            triggerFlashOverlay();
+            createLightningCrack(e.clientX, e.clientY, true);
+        }
     });
+
+    // Video Modal Logic
+    const videoModal = document.getElementById('video-modal');
+    const youtubeIframe = document.getElementById('youtube-iframe');
+    const modalClose = document.querySelector('.video-modal-close');
+
+    document.querySelectorAll('.video-card').forEach(card => {
+        card.addEventListener('click', (e) => {
+            e.preventDefault();
+            const videoId = card.getAttribute('data-video-id');
+            if (videoId) {
+                // Check if running locally via file:// to avoid strict iframe blocks, otherwise use normal embed
+                const isLocal = window.location.protocol === 'file:';
+                const domain = isLocal ? 'www.youtube-nocookie.com' : 'www.youtube.com';
+                
+                youtubeIframe.src = `https://${domain}/embed/${videoId}?autoplay=1&rel=0`;
+                videoModal.classList.add('active');
+            }
+        });
+    });
+
+    if (modalClose && videoModal) {
+        modalClose.addEventListener('click', () => {
+            videoModal.classList.remove('active');
+            youtubeIframe.src = '';
+        });
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                videoModal.classList.remove('active');
+                youtubeIframe.src = '';
+            }
+        });
+    }
 
 });

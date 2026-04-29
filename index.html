@@ -26,7 +26,13 @@
     <!-- Header / Nav -->
     <header id="header">
         <div class="container nav-container">
-            <a href="#" class="logo">A Purposeful Man</a>
+            <a href="#" class="logo">
+                <div class="logo-mark">APM</div>
+                <div class="logo-text">
+                    <span class="logo-title">A PURPOSEFUL</span>
+                    <span class="logo-tag">MAN</span>
+                </div>
+            </a>
             <div class="menu-toggle" id="mobile-menu">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -55,7 +61,7 @@
             <div class="hero-image fade-in-up delay-1">
                 <div class="image-wrapper">
                     <div class="glow-effect"></div>
-                    <img src="images/hero.jpg" alt="Albertino Lima - A Purposeful Man">
+                    <img src="images/hero_enhanced.png" alt="Albertino Lima - A Purposeful Man">
                 </div>
             </div>
         </div>
@@ -123,44 +129,44 @@
                 <p>Latest from the channel</p>
             </div>
             <div class="video-grid">
-                <a href="#" class="video-card fade-in-up delay-1">
+                <a href="#" data-video-id="em-8Xatxlw8" class="video-card fade-in-up delay-1">
                     <div class="thumbnail">
-                        <img src="images/thumb1.png" alt="Video Thumbnail">
+                        <img src="https://img.youtube.com/vi/em-8Xatxlw8/maxresdefault.jpg" alt="Video Thumbnail">
                         <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                     </div>
                     <h3 class="video-title">I Watched My Mother Die — This Changed Everything</h3>
                 </a>
-                <a href="#" class="video-card fade-in-up delay-2">
+                <a href="#" data-video-id="2s_1VaNmiu8" class="video-card fade-in-up delay-2">
                     <div class="thumbnail">
-                        <img src="images/thumb2.png" alt="Video Thumbnail">
+                        <img src="https://img.youtube.com/vi/2s_1VaNmiu8/maxresdefault.jpg" alt="Video Thumbnail">
                         <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                     </div>
                     <h3 class="video-title">Fear vs Faith (This Will Change How You Think)</h3>
                 </a>
-                <a href="#" class="video-card fade-in-up delay-3">
+                <a href="#" data-video-id="JHOJxxRRqDs" class="video-card fade-in-up delay-3">
                     <div class="thumbnail">
-                        <img src="images/thumb3.png" alt="Video Thumbnail">
+                        <img src="https://img.youtube.com/vi/JHOJxxRRqDs/maxresdefault.jpg" alt="Video Thumbnail">
                         <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                     </div>
                     <h3 class="video-title">God Gave You Potential — Why Are You Wasting It?</h3>
                 </a>
-                <a href="#" class="video-card fade-in-up delay-1">
+                <a href="#" data-video-id="PuSckKUWIgE" class="video-card fade-in-up delay-1">
                     <div class="thumbnail">
-                        <img src="images/thumb4.png" alt="Video Thumbnail">
+                        <img src="https://img.youtube.com/vi/PuSckKUWIgE/maxresdefault.jpg" alt="Video Thumbnail">
                         <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                     </div>
                     <h3 class="video-title">I Almost Folded Today… This Saved Me</h3>
                 </a>
-                <a href="#" class="video-card fade-in-up delay-2">
+                <a href="#" data-video-id="fvFNKrxlHqM" class="video-card fade-in-up delay-2">
                     <div class="thumbnail">
-                        <img src="images/thumb5.png" alt="Video Thumbnail">
+                        <img src="https://img.youtube.com/vi/fvFNKrxlHqM/maxresdefault.jpg" alt="Video Thumbnail">
                         <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                     </div>
                     <h3 class="video-title">Lust Is Destroying You (Quit This Now)</h3>
                 </a>
-                <a href="#" class="video-card fade-in-up delay-3">
+                <a href="#" data-video-id="WqGdqweaWBg" class="video-card fade-in-up delay-3">
                     <div class="thumbnail">
-                        <img src="images/thumb6.png" alt="Video Thumbnail">
+                        <img src="https://img.youtube.com/vi/WqGdqweaWBg/maxresdefault.jpg" alt="Video Thumbnail">
                         <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                     </div>
                     <h3 class="video-title">You’re Not Lazy. You’re Scared.</h3>
@@ -245,7 +251,13 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-brand">
-                <h3>A Purposeful Man</h3>
+                <a href="#" class="logo" style="margin-bottom: 1rem;">
+                    <div class="logo-mark">APM</div>
+                    <div class="logo-text">
+                        <span class="logo-title">A PURPOSEFUL</span>
+                        <span class="logo-tag">MAN</span>
+                    </div>
+                </a>
                 <p>Albertino Lima</p>
             </div>
             <div class="footer-social">
@@ -260,6 +272,14 @@
             <p>&copy; 2026 A Purposeful Man. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal">
+        <div class="video-modal-close"><i class="fa-solid fa-xmark"></i></div>
+        <div class="video-modal-content">
+            <iframe id="youtube-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 
     <!-- Vanilla Tilt for Interactive Cards -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
